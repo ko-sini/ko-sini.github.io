@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\"; // look for main.scss in _sass\n",
+		"// nav a when page.url == item.link\r\n.current {\r\n  color: green;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "ACCA,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,KAAK,GACb"
+}
