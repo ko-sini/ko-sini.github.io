@@ -1,3 +1,9 @@
 ---
 ---
 @import "main"; // look for main.scss in _sass
+@import "blog";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
