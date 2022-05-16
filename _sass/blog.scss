@@ -1,4 +1,4 @@
-#posts li {
+.posts li {
     list-style-type: none;
     margin-top: 50px;
     padding: 20px 0 20px 0;
@@ -22,7 +22,7 @@
 }
 
 .post h2::after {
-    border-bottom: 2px solid rgb(0, 0, 146);;
+    border-bottom: 2px solid rgb(0, 0, 146);
     //background-image: url("/assets/svg/cosine_5.svg");
     //background-repeat: no-repeat;
     //background-position: center bottom;
