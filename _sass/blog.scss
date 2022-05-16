@@ -1,41 +1,84 @@
-.posts li {
+#posts li {
     list-style-type: none;
+    margin-top: 50px;
     padding: 20px 0 20px 0;
 }
+
+.post {
+    margin-bottom: 130px;
+    color: #1e1e1e;
+}
   
-.posts a, .posts a:visited, .posts a:active {
+.post a, .post a:visited, .post a:active {
     text-decoration: none;
     color: #1e1e1e;
 }
   
-.posts h2 {
+.post h2 {
     font-family: 'Roboto Mono', Arial, sans-serif;
     font-weight: 400;
     letter-spacing: 1.5px;
     text-align: center;
 }
 
-.posts h2::after {
-    //border-bottom: 2px solid blue;
-    background-image: url("/assets/svg/cosine_5.svg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    bottom: -10px;
+.post h2::after {
+    border-bottom: 2px solid rgb(0, 0, 146);;
+    //background-image: url("/assets/svg/cosine_5.svg");
+    //background-repeat: no-repeat;
+    //background-position: center bottom;
+    display: block;
+    //bottom: -10px;
     content: "";
-    height: 30px;
+    height: 10px;
     position: absolute;
-    width: 100px;
+    width: 90px;
     left:50%;
     transform: translateX(-50%);
+    margin-left: 22px;
+    padding-top: -3px;
 }
 
-.posts h3 {
+.post h3 {
     font-family: 'Roboto Mono', Arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
     color: #c0c0c0;
     text-align: center;
-    padding: 30px 0;
+    padding: 15px 0;
+}
+
+.im {
+    text-align: center;
+}
+
+.post img {
+    max-width: 800px;
+}
+
+.read-more {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 50px;
+    transition: 0.5s;
+}
+
+.read-more a, .read-more a:visited, .read-more a:active {
+    font-family: 'Roboto Mono', Arial, sans-serif;
+    background-color: rgb(0, 0, 146);
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.read-more a:hover {
+    font-family: 'Roboto Mono', Arial, sans-serif;
+    background-color: transparent;
+    color: rgb(0, 0, 146);
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    transition: 0.3s;
 }
 
 .cos {
