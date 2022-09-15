@@ -1,0 +1,92 @@
+<!doctype html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Potify</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet"> 
+
+        <!-- PyScript -->
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+            - numpy
+            - paths:
+                - ../assets/pyscript/potify.py
+        </py-env>
+
+        <!-- CSS -->
+        <style>
+            body {
+                background-color:  #fff;
+                font-family: "Open Sans", sans-serif;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-family: 'Josefin Sans', sans-serif;
+                color: #a7513b;
+                font-size: 46px;
+                font-weight: 600;
+                text-transform: lowercase;
+                letter-spacing: 1.5px;
+            }
+
+            h3 {
+                font-family: 'Josefin Sans', sans-serif;
+                color: #ba6f4d;
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            .header {
+                width: 100%;
+                margin: 0 auto;
+                padding: 50px 0 50px 0;
+                text-align: center;
+            }
+
+            .app {
+                width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                background-color: #c0cc8a;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Potify.</h1>
+            <br />
+            <h3>Please provide some details about your pot...</h3><br />
+        </div>
+
+        <div class="app">
+            <input id="diameter_base" type="number" placeholder="Diameter of base">
+            <input id="diameter_top" type="number" placeholder="Diameter of top">
+            <input id="height" type="number" placeholder="Height">
+
+            <py-script>
+                import numpy as np
+                from potify import v_pot
+                
+                v = v_pot(
+                    diameter_base=11,
+                    diameter_top=19,
+                    height=18,
+                )
+                v = v / 1000
+                print("The volume of your pot is {} liters".format(v))
+                print("You should get a new pot!")
+            </py-script>
+        </div>
+    </body>
+</html>
