@@ -10,34 +10,30 @@ This repository is a GitHub Pages site using Jekyll. The site source is stored i
 
 - Ruby (2.7+ recommended)
   - Install: https://guides.rubyonrails.org/install_ruby_on_rails.html#install-ruby-on-windows
-- Jekyll installed (`gem install jekyll`)
-- Optional: Bundler if you want to manage gems with a `Gemfile`
-    - `gem install bundler`
-    - `bundle install`
-    - `bundle exec jekyll serve`
+- Install dependencies with bundler
+  - Install bundler: `gem install bundler`
+  - Install bundle from Gemfile: `bundle install`
 
 ## Local development
 
 From the repository root:
 
 ```bash
-jekyll serve
+bundle exec jekyll serve
 ```
 
 Then open `http://127.0.0.1:4000` in your browser.
 
-If you do not have a `Gemfile`, install Jekyll globally:
+### WSL troubleshooting of `jekyll serve`
+
+If you get the error `Jekyll: Operation not permitted @ apply2files` on WSL you may need to change ownership of the project files. Run:
 
 ```bash
-gem install jekyll
+sudo chmod -R 777 /mnt/e/Work/project/
+sudo chown -R <youruser> /mnt/e/Work/project/
 ```
 
-If you want to use Bundler later, add a `Gemfile` and run:
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
+After this you may need to restart VSCode and WSL for the ownership changes to become effective.
 
 ## Build output
 
