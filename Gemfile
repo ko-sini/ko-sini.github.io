@@ -1,15 +1,34 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
+# gem "rails"
+
+gem "rails", "~> 8.1"
+
 gem "jekyll", "~> 4.4.1"
-gem "minima", "~> 2.5"
-
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.17"
-end
-
-platforms :mingw, :x64_mingw, :mswin do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
-end
-
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem "minima", "~> 2.5.2"
+gem "addressable", "~> 2.9.0"
+gem "base64", "~> 0.3.0"
+gem "csv", "~> 3.3.5"
+gem "i18n", "~> 1.14.8"
+gem "jekyll-sass-converter", "~> 3.1.0"
+gem "json", "~> 2.19.5"
+gem "kramdown", "~> 2.5.2"
+gem "mercenary", "~> 0.4.0"
+gem "rouge", "~> 4.7.0"
+gem "terminal-table", "~> 3.0.2"
+gem "webrick", "~> 1.9.2"
+gem "jekyll-seo-tag", "~> 2.9.0"
+gem "public_suffix", "~> 7.0.5"
+gem "http_parser.rb", "~> 0.8.1"
+gem "concurrent-ruby", "~> 1.3.6"
+gem "sass-embedded", "~> 1.99.0"
+gem "listen", "~> 3.10.0"
+gem "rexml", "~> 3.4.4"
+gem "unicode-display_width", "~> 2.6.0"
+gem "google-protobuf", "~> 4.34.1"
+gem "logger", "~> 1.7.0"
+gem "bigdecimal", "~> 4.1.2"
+gem "rake", "~> 13.4.2"
+gem "ffi", "~> 1.17.4"
