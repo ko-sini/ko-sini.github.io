@@ -1,8 +1,8 @@
 ---
 ---
 
-@use "main"; // look for main.scss in _sass
-@use "blog";
+@import "main"; // look for main.scss in _sass
+@import "blog";
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Varela+Round&display=swap');

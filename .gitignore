@@ -1,2 +1,6 @@
 .jekyll-cache
 _site
+
+# Github pages deployment handles gemfile
+Gemfile
+Gemfile.lock
